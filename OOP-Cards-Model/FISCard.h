@@ -15,9 +15,10 @@
 @property (strong, nonatomic, readonly) NSString *cardLabel;
 @property (nonatomic, readonly) NSUInteger cardValue;
 
+-(instancetype)init;
 -(instancetype) initWithSuit: (NSString *)suit rank: (NSString *) rank;
 
--(NSArray *)validSuits;
--(NSArray *)validRanks;
++(NSArray *)validSuits;
++(NSArray *)validRanks;
 
 @end
